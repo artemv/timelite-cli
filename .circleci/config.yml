@@ -6,17 +6,16 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: dependency-cache-v2-{{ checksum "package.json" }}
       - run:
           name: install-deps
           command: |
             yarn --frozen-lockfile
       - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: dependency-cache-v2-{{ checksum "package.json" }}
           paths:
             - node_modules
             - ~/.cache/yarn
-            - yarn.lock
       - run:
           name: post-deps
           command: |
@@ -33,7 +32,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
+          key: dependency-cache-v2-{{ checksum "package.json" }}
       - run:
           name: deploy
           command: |
