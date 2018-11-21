@@ -1,4 +1,5 @@
 # timelite-cli 
+[![CircleCI](https://circleci.com/gh/artemv/timelite-cli.svg?style=svg)](https://circleci.com/gh/artemv/timelite-cli)
 [![Greenkeeper badge](https://badges.greenkeeper.io/artemv/timelite-cli.svg)](https://greenkeeper.io/)
 
 CLI utility to sum time durations
