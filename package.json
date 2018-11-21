@@ -9,7 +9,7 @@
   },
   "bin": "bin/cli.js",
   "main": "src",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "license": "MIT",
   "keywords": [
     "time",
