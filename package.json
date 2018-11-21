@@ -1,0 +1,48 @@
+{
+  "name": "timelite-cli",
+  "description": "CLI utility to sum time durations",
+  "repository": "artemv/timelite-cli",
+  "author": {
+    "name": "Artem Vasiliev",
+    "email": "artem.job@gmail.com",
+    "url": "github.com/artemv"
+  },
+  "bin": "bin/cli.js",
+  "main": "src",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "time",
+    "time string",
+    "add times",
+    "time utilities"
+  ],
+  "files": [
+    "bin",
+    "src"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "eslint": "eslint bin src test",
+    "test": "(yarn eslint || true) && nyc ava test"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "codecov": "^3.0.0",
+    "condition-circle": "^2.0.1",
+    "eslint": "^4.9.0",
+    "eslint-config-google": "^0.9.1",
+    "nyc": "^11.0.0",
+    "semantic-release": "^15.0.3",
+    "simple-commit-message": "^4.0.3"
+  },
+  "release": {
+    "analyzeCommits": "simple-commit-message"
+  },
+  "dependencies": {
+    "meow": "^5.0.0",
+    "timelite": "^0.0.11"
+  }
+}

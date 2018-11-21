@@ -1,0 +1,57 @@
+version: 2
+jobs:
+  test:
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: install-deps
+          command: |
+            yarn --frozen-lockfile
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+            - ~/.cache/yarn
+            - yarn.lock
+      - run:
+          name: post-deps
+          command: |
+            mkdir ci-artifacts
+            cp yarn.lock ci-artifacts/
+          when: always
+      - run: yarn test
+      - store_artifacts:
+          path: ci-artifacts/
+
+  deploy:
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: deploy
+          command: |
+            if [ "${CIRCLE_PROJECT_USERNAME}" == "artemv" ]; then
+              cp .circleci/.npmrc .
+              (yarn semantic-release) || echo "publishing failed"
+            fi
+
+workflows:
+  version: 2
+  main:
+    jobs:
+      - test
+      - deploy:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
+          context: "my npm-based projects"
+
