@@ -17,6 +17,7 @@ $ timelite-cli --help
 
     Usage
       $ timelite-cli --sum="1:30, 7, 6, 7:40"
+      => 22:10
 
     Options
       --sum: comma-separated list of durations to sum
