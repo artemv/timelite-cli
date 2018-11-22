@@ -26,3 +26,4 @@ $ timelite-cli --help
 ## License
 
 MIT © [Artem Vasiliev](https://github.com/artemv)
+
