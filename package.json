@@ -29,7 +29,7 @@
     "test": "(yarn eslint || true) && nyc ava test"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
+    "ava": "^1.0.1",
     "codecov": "^3.0.0",
     "condition-circle": "^2.0.1",
     "eslint": "^5.9.0",
