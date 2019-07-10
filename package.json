@@ -26,10 +26,10 @@
   },
   "scripts": {
     "eslint": "eslint bin src test",
-    "test": "nyc ava test"
+    "test": "nyc ava"
   },
   "devDependencies": {
-    "ava": "^1.0.1",
+    "ava": "^2.2.0",
     "codecov": "^3.0.0",
     "condition-circle": "^2.0.1",
     "eslint": "^6.0.0",
