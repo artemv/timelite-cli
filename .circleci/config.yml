@@ -22,7 +22,10 @@ jobs:
             mkdir ci-artifacts
             cp yarn.lock ci-artifacts/
           when: always
-      - run: yarn test
+      - run: yarn eslint
+      - run:
+          command: yarn test
+          when: always
       - store_artifacts:
           path: ci-artifacts/
 

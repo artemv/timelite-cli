@@ -9,7 +9,7 @@ function main(opts = {}) {
 }
 
 function sum(csv) {
-  let parts = csv.split(',').map((p) => p.trim());
+  const parts = csv.split(',').map((p) => p.trim());
   let result = str(add(parts));
   if (result.endsWith(':00')) {
     result = result.substr(0, result.length - 3);
