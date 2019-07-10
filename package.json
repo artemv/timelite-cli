@@ -35,11 +35,10 @@
     "eslint": "^6.0.0",
     "eslint-config-google": "^0.13.0",
     "nyc": "^13.1.0",
-    "semantic-release": "^15.0.3",
-    "simple-commit-message": "^4.0.3"
+    "simple-semantic-config": "^6.0.14"
   },
   "release": {
-    "analyzeCommits": "simple-commit-message"
+    "extends": "simple-semantic-config"
   },
   "dependencies": {
     "meow": "^5.0.0",
