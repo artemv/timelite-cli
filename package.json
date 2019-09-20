@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "ava": "^2.2.0",
-    "codecov": "^3.0.0",
+    "codecov": "^3.6.1",
     "eslint": "^6.0.0",
     "eslint-config-google": "^0.13.0",
     "nyc": "^13.1.0",
