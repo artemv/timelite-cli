@@ -34,7 +34,7 @@
     "eslint": "^6.0.0",
     "eslint-config-google": "^0.13.0",
     "nyc": "^13.1.0",
-    "simple-semantic-config": "^6.0.14"
+    "simple-semantic-config": "^6.0.16"
   },
   "release": {
     "extends": "simple-semantic-config"
