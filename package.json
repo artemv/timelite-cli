@@ -29,7 +29,9 @@
     "test": "nyc ava"
   },
   "devDependencies": {
-    "ava": "^2.2.0",
+    "@ava/babel": "^1.0.0",
+    "ava": "^3.0.0",
+    "babel-eslint": "^10.0.3",
     "codecov": "^3.0.0",
     "eslint": "^6.0.0",
     "eslint-config-google": "^0.13.0",
@@ -42,5 +44,8 @@
   "dependencies": {
     "meow": "^6.0.0",
     "timelite": "^0.0.11"
+  },
+  "ava": {
+    "babel": true
   }
 }
