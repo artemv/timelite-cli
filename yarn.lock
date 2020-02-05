@@ -5960,10 +5960,10 @@ signale@^1.2.1:
     figures "^2.0.0"
     pkg-conf "^2.1.0"
 
-simple-semantic-config@^6.0.14:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/simple-semantic-config/-/simple-semantic-config-6.1.0.tgz#9887ca914258481c61f0664ac765639b1439f126"
-  integrity sha512-axJPbtNWhWkPU/ZTyHxS6QiF8edKSYj2LinewjWYxzJIaN+ZeFtw7xiba9M4b5k09pO+2IkKO2JZNmfNU5rmOg==
+simple-semantic-config@^6.1.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/simple-semantic-config/-/simple-semantic-config-6.1.1.tgz#2ee6cdc428ee7bf3ebb53df83ab3119deef842e9"
+  integrity sha512-bMxtrjkzyGbKLPBTuchj4/aiPHAuxmgJRiv0XoGZkA41n8XOJlTvc4Owp8yCw2lh2nMqtSw8ciI+uILDoAWmjA==
   dependencies:
     semantic-release "^16.0.2"
 
