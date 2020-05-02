@@ -42,7 +42,7 @@
     "extends": "simple-semantic-config"
   },
   "dependencies": {
-    "meow": "^6.0.0",
+    "meow": "^6.1.1",
     "timelite": "^0.0.11"
   },
   "ava": {
